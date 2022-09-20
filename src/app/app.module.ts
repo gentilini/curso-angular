@@ -8,6 +8,7 @@ import { FatherComponentComponent } from './components/father-component/father-c
 import { SonComponentComponent } from './components/son-component/son-component.component';
 import { DirectivesComponentComponent } from './components/directives-component/directives-component.component';
 import { IfRenderComponentComponent } from './components/if-render-component/if-render-component.component';
+import { EventComponentComponent } from './components/event-component/event-component.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { IfRenderComponentComponent } from './components/if-render-component/if-
     FatherComponentComponent,
     SonComponentComponent,
     DirectivesComponentComponent,
-    IfRenderComponentComponent
+    IfRenderComponentComponent,
+    EventComponentComponent
   ],
   imports: [
     BrowserModule,
