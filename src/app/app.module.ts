@@ -7,6 +7,7 @@ import { FirstComponentComponent } from './components/first-component/first-comp
 import { FatherComponentComponent } from './components/father-component/father-component.component';
 import { SonComponentComponent } from './components/son-component/son-component.component';
 import { DirectivesComponentComponent } from './components/directives-component/directives-component.component';
+import { IfRenderComponentComponent } from './components/if-render-component/if-render-component.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { DirectivesComponentComponent } from './components/directives-component/
     FirstComponentComponent,
     FatherComponentComponent,
     SonComponentComponent,
-    DirectivesComponentComponent
+    DirectivesComponentComponent,
+    IfRenderComponentComponent
   ],
   imports: [
     BrowserModule,
