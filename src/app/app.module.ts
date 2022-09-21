@@ -9,6 +9,8 @@ import { SonComponentComponent } from './components/son-component/son-component.
 import { DirectivesComponentComponent } from './components/directives-component/directives-component.component';
 import { IfRenderComponentComponent } from './components/if-render-component/if-render-component.component';
 import { EventComponentComponent } from './components/event-component/event-component.component';
+import { EmitterComponentComponent } from './components/emitter-component/emitter-component.component';
+import { ChangeNumberComponentComponent } from './components/change-number-component/change-number-component.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { EventComponentComponent } from './components/event-component/event-comp
     SonComponentComponent,
     DirectivesComponentComponent,
     IfRenderComponentComponent,
-    EventComponentComponent
+    EventComponentComponent,
+    EmitterComponentComponent,
+    ChangeNumberComponentComponent
   ],
   imports: [
     BrowserModule,
