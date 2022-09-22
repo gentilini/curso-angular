@@ -3,6 +3,10 @@
 
 <div>
     <ul>
-        <li *ngFor="let tech of techs">{{ tech.name }} - {{ tech.type }}</li>
+        <li *ngFor="let technology of technologies">
+            {{ technology.name }}
+            <button (click)="showTechnologyDetails(technology)">Detalhes</button>
+        </li>
     </ul>
+    <p>{{ technologyDetails }}</p>
 </div>

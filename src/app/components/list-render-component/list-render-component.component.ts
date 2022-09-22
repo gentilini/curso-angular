@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Technology } from 'src/app/interfaces/Technology';
 
 @Component({
   selector: 'app-list-render-component',
@@ -7,18 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListRenderComponentComponent implements OnInit {
 
-  techs = [
-    {name: "JS", type: "Frontend"},
-    {name: "TS", type: "Frontend"},
-    {name: "CSS", type: "Frontend"},
-    {name: "HTML", type: "Frontend"},
-    {name: "C#", type: "Backend"},
-    {name: ".NET", type: "Backend"}
+  technologies: Technology[] = [
+    { name: "JS", type: "Frontend" },
+    { name: "TS", type: "Frontend" },
+    { name: "CSS", type: "Frontend" },
+    { name: "HTML", type: "Frontend" },
+    { name: "C#", type: "Backend" },
+    { name: ".NET", type: "Backend" }
   ];
+
+  technologyDetails: string = "";
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  showTechnologyDetails(technology:Technology) {
+    this.technologyDetails = `A tecnologia ${technology.name} é do tipo ${technology.type}`
   }
 
 }
