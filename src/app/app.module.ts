@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +14,7 @@ import { EmitterComponentComponent } from './components/emitter-component/emitte
 import { ChangeNumberComponentComponent } from './components/change-number-component/change-number-component.component';
 import { ListRenderComponentComponent } from './components/list-render-component/list-render-component.component';
 import { PipesComponentComponent } from './components/pipes-component/pipes-component.component';
+import { TwoWayDataBindingComponentComponent } from './components/two-way-data-binding-component/two-way-data-binding-component.component';
 
 @NgModule({
   declarations: [
@@ -26,11 +28,13 @@ import { PipesComponentComponent } from './components/pipes-component/pipes-comp
     EmitterComponentComponent,
     ChangeNumberComponentComponent,
     ListRenderComponentComponent,
-    PipesComponentComponent
+    PipesComponentComponent,
+    TwoWayDataBindingComponentComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
