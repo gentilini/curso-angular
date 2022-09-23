@@ -12,6 +12,7 @@ import { EventComponentComponent } from './components/event-component/event-comp
 import { EmitterComponentComponent } from './components/emitter-component/emitter-component.component';
 import { ChangeNumberComponentComponent } from './components/change-number-component/change-number-component.component';
 import { ListRenderComponentComponent } from './components/list-render-component/list-render-component.component';
+import { PipesComponentComponent } from './components/pipes-component/pipes-component.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ListRenderComponentComponent } from './components/list-render-component
     EventComponentComponent,
     EmitterComponentComponent,
     ChangeNumberComponentComponent,
-    ListRenderComponentComponent
+    ListRenderComponentComponent,
+    PipesComponentComponent
   ],
   imports: [
     BrowserModule,
