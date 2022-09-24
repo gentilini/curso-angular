@@ -1,0 +1,10 @@
+{
+    "technologies": [
+        { "name": "TS", "type": "Frontend" },
+        { "name": "JS", "type": "Frontend" },
+        { "name": "CSS", "type": "Frontend" },
+        { "name": "HTML", "type": "Frontend" },
+        { "name": "C#", "type": "Backend" },
+        { "name": ".NET", "type": "Backend" }
+    ]
+}

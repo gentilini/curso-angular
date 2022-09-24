@@ -9,18 +9,13 @@ import { ListRenderServiceService } from 'src/app/services/list-render-service.s
 })
 export class ListRenderComponentComponent implements OnInit {
 
-  technologies: Technology[] = [
-    { name: "JS", type: "Frontend" },
-    { name: "TS", type: "Frontend" },
-    { name: "CSS", type: "Frontend" },
-    { name: "HTML", type: "Frontend" },
-    { name: "C#", type: "Backend" },
-    { name: ".NET", type: "Backend" },
-  ];
+  technologies: Technology[] = [];
 
   technologyDetails: string = "";
 
-  constructor(private listService: ListRenderServiceService) { }
+  constructor(private listService: ListRenderServiceService) {
+    this.getTechnologies();
+   }
 
   ngOnInit(): void {
   }
@@ -31,6 +26,10 @@ export class ListRenderComponentComponent implements OnInit {
 
   removeTechnology(technology: Technology) {
     this.technologies = this.listService.remove(this.technologies, technology);
+  }
+
+  getTechnologies():void {
+    this.listService.getAll().subscribe((technologies) => (this.technologies = technologies));
   }
 
 }
