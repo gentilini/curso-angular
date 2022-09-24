@@ -6,6 +6,7 @@
         <li *ngFor="let technology of technologies">
             {{ technology.name }}
             <button (click)="showTechnologyDetails(technology)">Detalhes</button>
+            <button (click)="removeTechnology(technology)">Remover</button>
         </li>
     </ul>
     <p>{{ technologyDetails }}</p>
