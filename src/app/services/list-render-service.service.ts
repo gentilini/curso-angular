@@ -21,4 +21,8 @@ export class ListRenderServiceService {
   getAll(): Observable<Technology[]> {
     return this.http.get<Technology[]>(this.apiUrl)
   }
+
+  getItem(id:Number): Observable<Technology> {
+    return this.http.get<Technology>(`${this.apiUrl}/${id}`)
+  }
 }

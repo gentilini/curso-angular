@@ -4,7 +4,9 @@
 <div>
     <ul>
         <li *ngFor="let technology of technologies">
-            {{ technology.name }}
+            <a routerLink="/list/{{technology.id}}">
+                {{ technology.name }}
+            </a>
             <button (click)="showTechnologyDetails(technology)">Detalhes</button>
             <button (click)="removeTechnology(technology)">Remover</button>
         </li>
