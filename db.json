@@ -1,10 +1,24 @@
 {
-    "technologies": [
-        { "id": 1, "name": "TS", "type": "Frontend" },
-        { "id": 2, "name": "JS", "type": "Frontend" },
-        { "id": 3, "name": "CSS", "type": "Frontend" },
-        { "id": 4, "name": "HTML", "type": "Frontend" },
-        { "id": 5, "name": "C#", "type": "Backend" },
-        { "id": 6, "name": ".NET", "type": "Backend" }
-    ]
+  "technologies": [
+    {
+      "id": 1,
+      "name": "TS",
+      "type": "Frontend"
+    },
+    {
+      "id": 2,
+      "name": "JS",
+      "type": "Frontend"
+    },
+    {
+      "id": 4,
+      "name": "HTML",
+      "type": "Frontend"
+    },
+    {
+      "id": 5,
+      "name": "C#",
+      "type": "Backend"
+    }
+  ]
 }

@@ -25,7 +25,8 @@ export class ListRenderComponentComponent implements OnInit {
   }
 
   removeTechnology(technology: Technology) {
-    this.technologies = this.listService.remove(this.technologies, technology);
+    this.technologies = this.technologies.filter((x) => technology.name !== x.name)
+    this.listService.remove(technology.id);
   }
 
   getTechnologies():void {

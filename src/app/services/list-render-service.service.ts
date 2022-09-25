@@ -12,10 +12,8 @@ export class ListRenderServiceService {
 
   constructor(private http: HttpClient) { }
 
-  remove(technologies:Technology[], technology:Technology) {
-    return technologies.filter((x) => {
-      return technology.name !== x.name;
-    });
+  remove(id:Number) {
+    this.http.delete<Technology>(`${this.apiUrl}/${id}`).subscribe();
   }
 
   getAll(): Observable<Technology[]> {
